@@ -9,6 +9,7 @@ ENV HELM_VERSION v3.6.0
 # Install needed packages and Azure CLI
 RUN apk add \
     python3 \
+    bash \
     py3-pip \
     curl \ 
     git \

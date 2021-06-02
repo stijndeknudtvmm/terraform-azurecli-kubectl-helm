@@ -1,14 +1,15 @@
-FROM alpine:3.11
-LABEL maintainer="florian@ventx.de"
+FROM alpine:3.13.5
+LABEL maintainer="s.deknudt@vmm.be"
 
-ENV AZURE_CLI_VERSION 2.0.81
-ENV TERRAFORM_VERSION 0.12.21
-ENV KUBE_VERSION v1.15.9
-ENV HELM_VERSION v3.0.3
+ENV AZURE_CLI_VERSION 2.24.0
+ENV TERRAFORM_VERSION 0.15.4
+ENV KUBE_VERSION v1.19.7
+ENV HELM_VERSION v3.6.0
 
 # Install needed packages and Azure CLI
 RUN apk add \
     python3 \
+    py3-pip \
     curl \ 
     git \
     jq \
